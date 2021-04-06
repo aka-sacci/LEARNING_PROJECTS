@@ -1,21 +1,6 @@
 
 function consultaCNPJ(){
-
-    var nome;
-    var fantasia;
-    var uf;
-    var municipio;
-    var CEP;
-    var logradouro;
-    var numero;
-    var bairro;
-    var abertura;
-    var atividade;
-    var CNAE;
-
     var CNPJ_REQUEST = document.getElementById("CNPJ_requested").value;
-
-
 
     $.ajax({
         url: "https://www.receitaws.com.br/v1/cnpj/" + CNPJ_REQUEST,
