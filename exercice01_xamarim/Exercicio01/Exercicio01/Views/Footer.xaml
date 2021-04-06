@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exercicio01.Views.Footer">
+  <ContentView.Content>
+        
+        <StackLayout BackgroundColor="Gray" HeightRequest="85" HorizontalOptions="Fill">
+            <BoxView Color="Black" HeightRequest="2"/>
+            <Label Text="Rua das Indústrias, 130" TextColor="White" HorizontalOptions="Center"/>
+
+            <Grid HorizontalOptions="Center" Padding="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="*" />
+
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Column="0" Grid.Row="0"  VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label Text="Contatos:" TextColor="White"></Label>
+                </StackLayout>
+                <StackLayout Grid.Column="1" Grid.Row="0">
+                    <Label Text="Fone: (11) 4031-0628" TextColor="White"></Label>
+                    <Label Text="Email: atendimento@fatecbpaulista.edu.br" TextColor="White"></Label>
+                </StackLayout>
+            </Grid>
+
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>

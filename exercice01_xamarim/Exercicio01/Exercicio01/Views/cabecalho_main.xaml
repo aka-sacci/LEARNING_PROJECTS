@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exercicio01.Views.cabecalho_main">
+  <ContentView.Content>
+        <StackLayout HorizontalOptions="Fill" Padding="0">
+            <Grid HorizontalOptions="Center" Padding="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="105" />
+                    <ColumnDefinition Width="105" />
+                    <ColumnDefinition Width="105" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+
+                </Grid.RowDefinitions>
+
+                <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="0" WidthRequest="50" HeightRequest="50">
+                    <Image Source="cps.png" />
+           
+
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Grid.Column="1" Grid.Row="0" WidthRequest="50" HeightRequest="50">
+                    <Image Source="logofatec.png" />
+
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.Row="0" WidthRequest="50" HeightRequest="50">
+                    <Image Source="sp.png" />
+
+
+
+                </StackLayout>
+
+
+            </Grid>
+            
+            <BoxView  BackgroundColor="Black" 
+                      HeightRequest="2"/>
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>

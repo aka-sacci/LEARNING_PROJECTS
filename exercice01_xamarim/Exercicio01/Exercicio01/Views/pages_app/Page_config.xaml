@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exercicio01.Views.pages_app.Page_config"
+             xmlns:header="clr-namespace:Exercicio01.Views"
+             Title="Configuração"
+    >
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <!-- Cabeçalho-->
+                <StackLayout Padding="0">
+                    <BoxView HeightRequest="10"></BoxView>
+                    <header:cabecalho_main/>
+                </StackLayout>
+
+                <!-- Body -->
+                <StackLayout Padding="0, 10, 0, 130" VerticalOptions="Fill">
+                    <BoxView HeightRequest="10"></BoxView>
+                    <Grid HorizontalOptions="Center" Padding="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80" />
+                            <ColumnDefinition Width="*" />
+
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="150" />
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="30" />
+
+                        </Grid.RowDefinitions>
+
+                        <StackLayout Grid.Column="0" Grid.Row="0" HorizontalOptions="Start" VerticalOptions="Center">
+
+                            <Label Text="Foto:" FontSize="22"/>
+
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="1" Grid.Row="0" HorizontalOptions="Center">
+
+                            <Image Source="clipart1130279.png" WidthRequest="120" HeightRequest="120"/>
+
+                        </StackLayout>
+
+
+                        <StackLayout Grid.Column="0" Grid.Row="1" HorizontalOptions="Start" >
+
+                            <Label Text="RA:" FontSize="22"/>
+
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="1" Grid.Row="1" HorizontalOptions="Center" >
+
+                            <Label Text="196667777" FontSize="26"/>
+
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="0" Grid.Row="2" HorizontalOptions="Start" >
+
+                            <Label Text="Nome:" FontSize="22"/>
+
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="1" Grid.Row="2" HorizontalOptions="Center" >
+
+                            <Label Text="Nome do aluno" FontSize="20"/>
+
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="0" Grid.Row="3" HorizontalOptions="Start" >
+
+                            <Label Text="Curso:" FontSize="22"/>
+
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="1" Grid.Row="3" HorizontalOptions="Center" >
+
+                            <Label Text="Tecnólogo em Análise e Desenvolvimento de Sistemas" FontSize="20" />
+
+                        </StackLayout>
+
+
+
+
+
+
+
+                    </Grid>
+                </StackLayout>
+
+                <!-- footer -->
+                <StackLayout VerticalOptions="EndAndExpand">
+                    <header:Footer/>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

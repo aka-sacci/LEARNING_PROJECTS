@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppListView.MainPage">
+
+    <StackLayout>
+        <ListView x:Name="Lista"
+                  ItemSelected="Lista_ItemSelected"
+                  >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem Text="Editar"
+                                      x:Name="menu_editar"
+                                      Clicked="menu_editar_Clicked">
+                                
+                            </MenuItem>
+                            
+                            <MenuItem Text="Excluir"
+                                      x:Name="menu_excluir"
+                                      Clicked="menu_excluir_Clicked">
+
+                            </MenuItem>
+
+                        </ViewCell.ContextActions>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding End_image}"
+                                Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"
+                                   />
+                            <Label Text="{Binding Id}" 
+                                   Grid.Row="0" Grid.Column="1"/>
+                            <Label  Text="{Binding Nome}"
+                                Grid.Row="0" Grid.Column="2"/>
+                            <Label Text="{Binding Descricao}"
+                                Grid.Row="1" Grid.Column="2"
+                                   />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="NovaPagina" Text="Adicionar nova visita"
+                Clicked="NovaPagina_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

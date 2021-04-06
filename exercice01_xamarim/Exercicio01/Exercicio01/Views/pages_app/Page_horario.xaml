@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exercicio01.Views.pages_app.Page_horario"
+              xmlns:header="clr-namespace:Exercicio01.Views"
+             Title="Horário">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="0">
+            <!-- Cabeçalho-->
+            <StackLayout Padding="0">
+                <BoxView HeightRequest="10"></BoxView>
+                <header:cabecalho_main/>
+            </StackLayout>
+            
+            <!-- Body -->
+           
+            <StackLayout Padding="0, 10, 0, 130" VerticalOptions="Fill" Margin="0">
+                
+                <Label Text="Disciplinas" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center"/>
+
+                <Grid HorizontalOptions="Center" Padding="0">
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+
+                    </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions  Margin="0">
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="70" />
+                        <RowDefinition Height="70" />
+                        <RowDefinition Height="70" />
+                        <RowDefinition Height="70" />
+                        <RowDefinition Height="70" />
+                        <RowDefinition Height="70" />
+
+
+                    </Grid.RowDefinitions>
+                    
+                    <!-- Colunas de horário -->
+                    <StackLayout Grid.Column="0" Grid.Row="0" HorizontalOptions="Start" VerticalOptions="Center">
+                        <Label Text="Horarios"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="1" HorizontalOptions="Start" VerticalOptions="Center">
+                        <Label Text="08:00-"/>
+                        <Label Text="08:50"/>
+                        </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="2" HorizontalOptions="Start" VerticalOptions="Center">
+                            <Label Text="08:50-"/>
+                            <Label Text="09:40"/>
+                        </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="3" HorizontalOptions="Start" VerticalOptions="Center">
+                            <Label Text="09:50-"/>
+                            <Label Text="10:40"/>
+                        </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="4" HorizontalOptions="Start" VerticalOptions="Center">
+                            <Label Text="10:40-"/>
+                            <Label Text="11:30"/>
+                        </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="5" HorizontalOptions="Start" VerticalOptions="Center">
+                            <Label Text="11:40-"/>
+                            <Label Text="12:30"/>
+                        </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="6" HorizontalOptions="Start" VerticalOptions="Center">
+                            <Label Text="12:30-"/>
+                            <Label Text="13:20"/>
+                        </StackLayout>
+
+                            <!-- Linhas dias da semana (Topo da tabela) -->
+                            <StackLayout Grid.Column="1" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+                                <Label Text="Segunda"/>
+                            </StackLayout>
+                            <StackLayout Grid.Column="2" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+                                <Label Text="Terça"/>
+                            </StackLayout>
+                            <StackLayout Grid.Column="3" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+                                <Label Text="Quarta"/>
+                            </StackLayout>
+                            <StackLayout Grid.Column="4" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+                                <Label Text="Quinta"/>
+                            </StackLayout>
+                            <StackLayout Grid.Column="5" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+                                <Label Text="Sexta"/>
+                            </StackLayout>
+                            <StackLayout Grid.Column="6" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+                                <Label Text="Sábado"/>
+                            </StackLayout>
+
+                        <!-- Conteúdo -->
+
+                        <!-- LP -->
+                        <StackLayout Grid.Column="1" Grid.Row="1" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="Gray">
+                        </StackLayout>
+                        <StackLayout Grid.Column="1" Grid.Row="2" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="Gray">
+                            <Label Text="Linguagem de programação" TextColor="White" FontAttributes="Bold" ></Label>
+                        </StackLayout>
+                        <StackLayout Grid.Column="1" Grid.Row="3" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="Gray">
+                        </StackLayout>
+                        <StackLayout Grid.Column="1" Grid.Row="4" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="Gray">
+                        </StackLayout>
+
+                        <!-- Inglês -->
+                        <StackLayout Grid.Column="1" Grid.Row="5" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Green" Margin="0, 8, 0, 0">
+                        </StackLayout>
+                        <StackLayout Grid.Column="1" Grid.Row="6" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Green">
+                            <Label Text="Inglês" FontAttributes="Bold" TextColor="White" VerticalOptions="Start" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+
+                        <!-- Lab de hardware -->
+                        <StackLayout Grid.Column="2" Grid.Row="1" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Blue">
+                            <Label Text="Laboratório de Hardware" FontAttributes="Bold" TextColor="White" VerticalOptions="EndAndExpand" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+                        <StackLayout Grid.Column="2" Grid.Row="2" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Blue">
+                        </StackLayout>
+
+                        <!-- Calc -->
+                        <StackLayout Grid.Column="2" Grid.Row="3" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="Red" Margin="0, 8, 0, 0">
+                        </StackLayout>
+                        <StackLayout Grid.Column="2" Grid.Row="4" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="Red">
+                        </StackLayout>
+                        <StackLayout Grid.Column="2" Grid.Row="5" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="Red">
+                            <Label Text="Cálculo" TextColor="White" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+                        <StackLayout Grid.Column="2" Grid.Row="6" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="Red">
+                        </StackLayout>
+
+                        <!-- Eng. de Sw -->
+                    <!-- Quarta -->
+                        <StackLayout Grid.Column="3" Grid.Row="1" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Yellow">
+                            <Label Text="Engenharia de Software" FontAttributes="Bold" TextColor="Black" VerticalOptions="EndAndExpand" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+                        <StackLayout Grid.Column="3" Grid.Row="2" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Yellow">
+                        </StackLayout>
+                    
+                        <!-- Quinta -->
+                        <StackLayout Grid.Column="4" Grid.Row="3" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Yellow" Margin="0, 8, 0, 0">
+                            <Label Text="Engenharia de Software" FontAttributes="Bold" TextColor="Black" VerticalOptions="EndAndExpand" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+                        <StackLayout Grid.Column="4" Grid.Row="4" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Yellow">
+                        </StackLayout>
+
+
+                        <!-- Banco de dados -->
+                        <!-- Quarta -->
+                        <StackLayout Grid.Column="3" Grid.Row="3" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Pink" Margin="0, 8, 0, 0">
+                            <Label Text="Banco de Dados" FontAttributes="Bold" TextColor="Black" VerticalOptions="EndAndExpand" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+                        <StackLayout Grid.Column="3" Grid.Row="4" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Pink">
+                        </StackLayout>
+
+                        <!-- Quinta -->
+                        <StackLayout Grid.Column="4" Grid.Row="5" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Pink" Margin="0, 8, 0, 0">
+                            <Label Text="Banco de Dados" FontAttributes="Bold" TextColor="Black" VerticalOptions="EndAndExpand" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+                        <StackLayout Grid.Column="4" Grid.Row="6" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Pink">
+                        </StackLayout>
+
+
+                        <!-- LP IV -->
+                        <!-- Quarta -->
+                        <StackLayout Grid.Column="3" Grid.Row="5" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="GreenYellow" Margin="0, 8, 0, 0">
+                        </StackLayout>
+                        <StackLayout Grid.Column="3" Grid.Row="6" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="GreenYellow">
+                            <Label Text="Linguagem de Programação IV" FontAttributes="Bold" TextColor="Black" VerticalOptions="Start" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+
+                        <!-- Quinta -->
+                        <StackLayout Grid.Column="4" Grid.Row="1" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="GreenYellow">
+                            <Label Text="Linguagem de Programação IV" FontAttributes="Bold" TextColor="Black" VerticalOptions="EndAndExpand" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+                        <StackLayout Grid.Column="4" Grid.Row="2" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="GreenYellow">
+                        </StackLayout>
+
+
+                        <!-- GHI -->
+                        <StackLayout Grid.Column="5" Grid.Row="1" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="MediumPurple">
+                        </StackLayout>
+                        <StackLayout Grid.Column="5" Grid.Row="2" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="MediumPurple">
+                            <Label Text="GHI" FontAttributes="Bold" TextColor="Black" VerticalOptions="Start" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+
+                        <!-- ABC -->
+                        <StackLayout Grid.Column="5" Grid.Row="3" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Fuchsia"  Margin="0, 8, 0, 0">
+                        </StackLayout>
+                        <StackLayout Grid.Column="5" Grid.Row="4" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Fuchsia">
+                            <Label Text="ABC" FontAttributes="Bold" TextColor="Black" VerticalOptions="Start" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+
+                        <!-- DEF -->
+                        <StackLayout Grid.Column="5" Grid.Row="5" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Orange"  Margin="0, 8, 0, 0">
+                        </StackLayout>
+                        <StackLayout Grid.Column="5" Grid.Row="6" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Orange">
+                            <Label Text="DEF" FontAttributes="Bold" TextColor="Black" VerticalOptions="Start" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+
+                        <!-- Livre -->
+                        <StackLayout Grid.Column="6" Grid.Row="1" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Wheat">
+                        </StackLayout>
+                        <StackLayout Grid.Column="6" Grid.Row="2" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Wheat">
+                        </StackLayout>
+                        <StackLayout Grid.Column="6" Grid.Row="3" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Wheat">
+                        </StackLayout>
+                        <StackLayout Grid.Column="6" Grid.Row="4" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Wheat">
+                            <Label Text="Livre" FontAttributes="Bold" TextColor="Black" VerticalOptions="Start" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+                        <StackLayout Grid.Column="6" Grid.Row="5" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Wheat">
+                        </StackLayout>
+                        <StackLayout Grid.Column="6" Grid.Row="6" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Wheat">
+                        </StackLayout>
+
+                    </Grid>
+                <!-- END GRID -->
+                
+            </StackLayout>
+
+            <!-- footer -->
+            <StackLayout VerticalOptions="EndAndExpand">
+                <header:Footer/>
+            </StackLayout>
+
+
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

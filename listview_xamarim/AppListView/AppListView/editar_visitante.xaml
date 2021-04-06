@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppListView.editar_visitante">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="id:"></Label>
+            <Label Text="{Binding Id}"></Label>
+            <Label Text="Nome"/>
+            <Entry Text="{Binding Nome}"/>
+            <Label Text="Descrição"/>
+            <Entry Text="{Binding Descricao}"/>
+
+            <Button Text="Salvar" 
+                    x:Name="gravar"
+                    Clicked="gravar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
