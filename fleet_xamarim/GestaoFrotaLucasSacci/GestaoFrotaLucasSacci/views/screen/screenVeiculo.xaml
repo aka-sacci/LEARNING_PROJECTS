@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GestaoFrotaLucasSacci.views.screen.screenVeiculo"
+             Title="Veículos">
+    <ContentPage.Content>
+      
+            <StackLayout>
+                <Label Text="Veículos Cadastrados" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" Padding="0, 10, 0, 40"/>
+
+                <ListView x:Name="ListaVeiculos"
+                  ItemSelected="ListaVeiculos_ItemSelected"
+                  >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.ContextActions>
+                                    <MenuItem Text="Editar"
+                                      x:Name="menu_editar"
+                                      Clicked="menu_editar_Clicked">
+
+                                    </MenuItem>
+
+                                    <MenuItem Text="Excluir"
+                                      x:Name="menu_excluir"
+                                      Clicked="menu_excluir_Clicked">
+
+                                    </MenuItem>
+
+                                </ViewCell.ContextActions>
+
+                            <Grid Margin="10, 0, 10, 0">
+                                <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+
+                                    </Grid.ColumnDefinitions>
+
+
+                                <Label Text="{Binding Placa}"
+                                Grid.Row="0" Grid.Column="1"/>
+                                <Label Text="{Binding Modelo}"
+                                Grid.Row="1" Grid.Column="1"
+                                   />
+                                    <Label Text="Placa:"
+                                Grid.Row="0" Grid.Column="0"
+                                   />
+                                    <Label Text="Modelo:"
+                                Grid.Row="1" Grid.Column="0"
+                                   />
+
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button x:Name="mudarTela" Text="Ver registros de abastecimeto"
+                Clicked="mudarTela_Clicked"/>
+            <Button x:Name="novoRegistro" Text="Adicionar novo veículo"
+                Clicked="novoRegistro_Clicked"/>
+
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GestaoFrotaLucasSacci.views.screen.screenAbastecimento"
+             Title="Abastecimento">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Abastecimentos Cadastrados" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" Padding="0, 10, 0, 40"/>
+
+            <ListView x:Name="ListaAbastecimento"
+                      ItemSelected="ListaAbastecimento_ItemSelected"
+                  >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Editar"
+                                      x:Name="menu_editar"
+                                      Clicked="menu_editar_Clicked">
+
+                                </MenuItem>
+
+                                <MenuItem Text="Excluir"
+                                      x:Name="menu_excluir"
+                                      Clicked="menu_excluir_Clicked">
+
+                                </MenuItem>
+
+                            </ViewCell.ContextActions>
+
+                            <Grid Margin="10, 0, 10, 0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+     
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*" />
+
+
+
+                                </Grid.ColumnDefinitions>
+
+
+                                <Label Text="{Binding Data, StringFormat='{0:dd/MM/yyyy}'}"
+                                Grid.Row="0" Grid.Column="1"/>
+
+                                <Label Text="{Binding ValorTotal, StringFormat='R$ {0:F2}'}"
+                                Grid.Row="1" Grid.Column="1"
+                                   />
+                                <Label Text="Data:"
+                                Grid.Row="0" Grid.Column="0"
+                                   />
+         
+                                <Label Text="Total:"
+                                Grid.Row="1" Grid.Column="0"
+                                   />
+
+                                <Label Text="{Binding SEQ}"
+                                Grid.Row="0" Grid.Column="2" HorizontalOptions="End"
+                                   />
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="novoRegistro" Text="Adicionar novo registro"
+                Clicked="novoRegistro_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

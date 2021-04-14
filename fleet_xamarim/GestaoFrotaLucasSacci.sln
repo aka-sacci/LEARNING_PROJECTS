@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoFrotaLucasSacci.Android", "GestaoFrotaLucasSacci\GestaoFrotaLucasSacci.Android\GestaoFrotaLucasSacci.Android.csproj", "{3863260B-A524-40FD-89C4-CB66660FCD78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoFrotaLucasSacci", "GestaoFrotaLucasSacci\GestaoFrotaLucasSacci\GestaoFrotaLucasSacci.csproj", "{32513190-204D-4C27-A636-428D99FF41CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3863260B-A524-40FD-89C4-CB66660FCD78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3863260B-A524-40FD-89C4-CB66660FCD78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3863260B-A524-40FD-89C4-CB66660FCD78}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3863260B-A524-40FD-89C4-CB66660FCD78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3863260B-A524-40FD-89C4-CB66660FCD78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3863260B-A524-40FD-89C4-CB66660FCD78}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{32513190-204D-4C27-A636-428D99FF41CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32513190-204D-4C27-A636-428D99FF41CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32513190-204D-4C27-A636-428D99FF41CD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{32513190-204D-4C27-A636-428D99FF41CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32513190-204D-4C27-A636-428D99FF41CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32513190-204D-4C27-A636-428D99FF41CD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73F56687-C2BE-4064-91F1-FC492B7F0C36}
+	EndGlobalSection
+EndGlobal

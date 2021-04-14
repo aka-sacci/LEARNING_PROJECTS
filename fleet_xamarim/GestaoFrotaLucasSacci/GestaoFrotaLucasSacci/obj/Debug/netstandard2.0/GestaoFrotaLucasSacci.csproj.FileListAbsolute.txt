@@ -1,0 +1,9 @@
+C:\Users\Lucas Sacci\source\repos\GestaoFrotaLucasSacci\GestaoFrotaLucasSacci\GestaoFrotaLucasSacci\obj\Debug\netstandard2.0\GestaoFrotaLucasSacci.csprojAssemblyReference.cache
+C:\Users\Lucas Sacci\source\repos\GestaoFrotaLucasSacci\GestaoFrotaLucasSacci\GestaoFrotaLucasSacci\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Lucas Sacci\source\repos\GestaoFrotaLucasSacci\GestaoFrotaLucasSacci\GestaoFrotaLucasSacci\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Lucas Sacci\source\repos\GestaoFrotaLucasSacci\GestaoFrotaLucasSacci\GestaoFrotaLucasSacci\obj\Debug\netstandard2.0\GestaoFrotaLucasSacci.AssemblyInfoInputs.cache
+C:\Users\Lucas Sacci\source\repos\GestaoFrotaLucasSacci\GestaoFrotaLucasSacci\GestaoFrotaLucasSacci\obj\Debug\netstandard2.0\GestaoFrotaLucasSacci.AssemblyInfo.cs
+C:\Users\Lucas Sacci\source\repos\GestaoFrotaLucasSacci\GestaoFrotaLucasSacci\GestaoFrotaLucasSacci\obj\Debug\netstandard2.0\GestaoFrotaLucasSacci.csproj.CoreCompileInputs.cache
+C:\Users\Lucas Sacci\source\repos\GestaoFrotaLucasSacci\GestaoFrotaLucasSacci\GestaoFrotaLucasSacci\obj\Debug\netstandard2.0\GestaoFrotaLucasSacci.dll
+C:\Users\Lucas Sacci\source\repos\GestaoFrotaLucasSacci\GestaoFrotaLucasSacci\GestaoFrotaLucasSacci\obj\Debug\netstandard2.0\ref\GestaoFrotaLucasSacci.dll
+C:\Users\Lucas Sacci\source\repos\GestaoFrotaLucasSacci\GestaoFrotaLucasSacci\GestaoFrotaLucasSacci\obj\Debug\netstandard2.0\GestaoFrotaLucasSacci.pdb

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GestaoFrotaLucasSacci.views.notabbed.attVeiculo"
+             Title="Veículos">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Editar veiculo" FontSize="25" FontAttributes="Bold" HorizontalOptions="Center" Padding="0, 10, 0, 40"/>
+            <Label Text="Placa:"></Label>
+            <Label Text="{Binding Placa}"></Label>
+            <Label Text="Fabricante:"/>
+            <Entry Text="{Binding Fabricante}"/>
+            <Label Text="Modelo:"/>
+            <Entry Text="{Binding Modelo}"/>
+            <Label Text="Cor:"/>
+            <Entry Text="{Binding Cor}"/>
+            <Label Text="Ano:"/>
+            <Entry Text="{Binding Ano_Modelo}"/>
+            <Label Text="Kilometragem:"/>
+            <Entry Text="{Binding KM}"/>
+
+            <Button Text="Atualizar" 
+                    x:Name="gravar"
+                    Clicked="gravar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

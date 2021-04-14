@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GestaoFrotaLucasSacci.views.notabbed.addAbastecimento"
+             Title="Abastecimento">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Adicionar novo registro de abastecimento" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" Padding="0, 10, 0, 40"/>
+            <Label Text="Sequência:"/>
+            <Label Text="{Binding SEQ}"/>
+            <Label Text="Data:"/>
+            <DatePicker Date="{Binding Data}"/>
+            <Label Text="Quilometragem:"/>
+            <Entry Text="{Binding KM}"/>
+            <Label Text="Litros:"/>
+            <Entry Text="{Binding Litros}"/>
+            <Label Text="Valor Total:"/>
+            <Entry Text="{Binding ValorTotal}"/>
+
+            <Button Text="Salvar" 
+                    x:Name="gravar"
+                    Clicked="gravar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

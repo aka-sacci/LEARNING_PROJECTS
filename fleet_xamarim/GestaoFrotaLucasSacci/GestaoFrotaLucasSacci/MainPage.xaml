@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GestaoFrotaLucasSacci.MainPage">
+
+    <StackLayout>
+        
+        <ListView x:Name="ListaVeiculos"
+                  ItemSelected="ListaVeiculos_ItemSelected"
+                  >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem Text="Editar"
+                                      x:Name="menu_editar"
+                                      Clicked="menu_editar_Clicked">
+
+                            </MenuItem>
+
+                            <MenuItem Text="Excluir"
+                                      x:Name="menu_excluir"
+                                      Clicked="menu_excluir_Clicked">
+
+                            </MenuItem>
+
+                        </ViewCell.ContextActions>
+                        
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+
+                            </Grid.ColumnDefinitions>
+                            
+                            <Label  Text="{Binding Placa}"
+                                Grid.Row="0" Grid.Column="0"/>
+                            <Label Text="{Binding Modelo}"
+                                Grid.Row="1" Grid.Column="0"
+                                   />
+                            
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="novoRegistro" Text="Adicionar novo veículo"
+                Clicked="novoRegistro_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
